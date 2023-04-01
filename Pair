@@ -6,7 +6,13 @@ void explainPair(){
   cout<<p.first<<" "<<p.second<<endl;
   
   pair<int, pair<int,int>>nr = {22, {11, 10}};
-  cout<<nr.first<<" "<<nr.second.first<<" "<<nr.second.second;
+  cout<<nr.first<<" "<<nr.second.first<<" "<<nr.second.second<<endl;
+  
+  pair<int, int> arr[] = {{1,7}, {22,11}, {10, 10}};
+  int len = sizeof(arr)/sizeof(arr[0]);
+  for(int i = 0; i < len; i++){
+    cout<<arr[i].first<<" "<<arr[i].second<<endl;
+  }
 }
 
 int main(){
