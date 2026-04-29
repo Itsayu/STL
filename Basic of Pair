@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void explanPair(){
+void explainPair(){
   pair<int, int> p = {2, 4};
   cout<<p.first<<", "<<p.second<<endl;
 }
 
-void explanPairInPair(){
+void explainPairInPair(){
   pair<int, pair<string, int>> p = {2, {"Iti", 4}};
   cout<<p.first<<", "<<p.second.first<<", "<<p.second.second<<endl;
 } 
