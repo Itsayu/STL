@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void explanPair(){
+  pair<int, int> p = {2, 4};
+  cout<<p.first<<", "<<p.second<<endl;
+}
+
+void explanPairInPair(){
+  pair<int, pair<string, int>> p = {2, {"Iti", 4}};
+  cout<<p.first<<", "<<p.second.first<<", "<<p.second.second<<endl;
+} 
+
+void pairArray(){
+  pair<int, int> arr[] = {{1, 2}, {3, 4}, {5, 6}};
+  cout<<arr[1].first;
+  // cout<<arr[].
+}
+
+int main() 
+{
+    explanPair();
+    explanPairInPair();
+    pairArray();
+    return 0;
+}
