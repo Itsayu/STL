@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void explainList(){
+  list<int> l;
+  l.push_back(9);
+  l.emplace_back(5);
+  l.push_front(1);
+  l.emplace_front(9);
+  // l.push(9);
+  cout<<l.front()<<endl;
+  auto it = l.begin();
+  for(it; it !=l.end(); it++){
+    cout << *it<<", ";
+  }
+}
+
+
+int main() 
+{
+    explainList();
+    return 0;
+}
+
+//OR
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// void explainList(){
+//   list<int> l;
+//   l.push_back(9);
+//   l.emplace_back(5);
+//   l.push_front(1);
+//   l.emplace_front(9);
+
+//   cout << l.front() << endl;
+
+//   for(auto it = l.begin(); it != l.end(); it++){
+//     cout << *it << " ";
+//   }
+// }
+
+// int main() 
+// {
+//     explainList();
+//     return 0;
+// }
